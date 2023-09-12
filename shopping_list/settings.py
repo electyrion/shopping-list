@@ -31,7 +31,10 @@ PRODUCTION = env.bool('PRODUCTION', False)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*",
+                 "http://muhammad.vicky-tutorial.pbp.cs.ui.ac.id",
+                 "https://muhammad.vicky-tutorial.pbp.cs.ui.ac.id",
+                 ]
 
 
 # Application definition
