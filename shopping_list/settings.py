@@ -33,8 +33,9 @@ PRODUCTION = env.bool('PRODUCTION', False)
 DEBUG = True
 
 ALLOWED_HOSTS = ["*",
-                 "http://muhammad.vicky-tutorial.pbp.cs.ui.ac.id",
-                 "https://muhammad.vicky-tutorial.pbp.cs.ui.ac.id",
+                 "muhammad-vicky-tutorial.pbp.cs.ui.ac.id",
+                 "http://muhammad-vicky-tutorial.pbp.cs.ui.ac.id",
+                 "https://muhammad-vicky-tutorial.pbp.cs.ui.ac.id",
                  ]
 
 
