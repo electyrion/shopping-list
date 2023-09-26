@@ -19,11 +19,16 @@ from main.models import Product
 def show_main(request):
     products = Product.objects.filter(user=request.user)
 
+    if 'last_login' not in request.COOKIES:
+        last_login = 'unknown'
+    else:
+        last_login = request.COOKIES['last_login']
+
     context = {
         'name': request.user.username,
         'class': 'PBP A',
         'products': products,
-        'last_login': request.COOKIES['last_login'],
+        'last_login': last_login,
     }
 
     return render(request, "main.html", context)
